@@ -1,0 +1,6 @@
+node_modules/
+.env
+auto.sh
+server_logs.logs
+client/node_modules
+logfile.logs
