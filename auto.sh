@@ -1,0 +1,1 @@
+sudo node /home/shivamjaiswal9628/blog-app/server/index.js >> /home/shivamjaiswal9628/blog-app/server_logs.logs
