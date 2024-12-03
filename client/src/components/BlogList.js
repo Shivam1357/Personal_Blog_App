@@ -9,8 +9,8 @@ const BlogList = () => {
     useEffect(() => {
         // Fetch posts from the backend
         axios
-            //.get("http://34.28.253.47:8080/api/posts")
-            .get("http://localhost:8080/api/posts")
+            .get("http://34.28.253.47/api/posts")
+            //.get("http://localhost:8080/api/posts")
             .then((response) => {
                 setPosts(response.data);
                 setIsLoading(false); 

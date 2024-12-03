@@ -8,8 +8,8 @@ const PostDetails = () => {
 
     useEffect(() => {
         axios
-            //.get(`http://34.28.253.47:8080/api/posts/${id}`)
-            .get(`http://localhost:8080/api/posts/${id}`)
+            .get(`http://34.28.253.47/api/posts/${id}`)
+            // .get(`http://localhost:8080/api/posts/${id}`)
             .then(response => setPost(response.data))
             .catch(error => console.error(error));
     }, [id]);
