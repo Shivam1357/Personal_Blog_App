@@ -76,5 +76,5 @@ A fully responsive personal blog platform built with React.js, Node.js, and MySQ
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/Shivam1357/Personal_Blog_App/tree/docker_code
+   cd Personal_Blog_App
