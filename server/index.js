@@ -6,7 +6,7 @@ const postsRoutes = require('./routes/posts');
 const morgan = require('morgan');
 
 const app = express();
-const PORT = 8080;
+const PORT = 8000;
 
 // Middleware
 app.use(morgan('combined')); // Logging middleware

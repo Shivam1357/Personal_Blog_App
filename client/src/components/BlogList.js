@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-const BlogList = () => {
+const BlogList = ({API_URL}) => {
     const [posts, setPosts] = useState([]);
     const [isLoading, setIsLoading] = useState(true); 
 
     useEffect(() => {
         // Fetch posts from the backend
         axios
-            .get("http://34.28.253.47/api/posts")
-            //.get("http://localhost:8080/api/posts")
+            //.get("http://34.28.253.47/api/posts")
+            .get(`${API_URL}/api/posts`)
             .then((response) => {
                 setPosts(response.data);
                 setIsLoading(false); 

@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
-const PostDetails = () => {
+const PostDetails = ({API_URL}) => {
     const { id } = useParams();
     const [post, setPost] = useState(null);
 
     useEffect(() => {
         axios
-            .get(`http://34.28.253.47/api/posts/${id}`)
-            // .get(`http://localhost:8080/api/posts/${id}`)
+            //.get(`http://34.28.253.47/api/posts/${id}`)
+            .get(`${API_URL}/api/posts/${id}`)
             .then(response => setPost(response.data))
             .catch(error => console.error(error));
     }, [id]);
